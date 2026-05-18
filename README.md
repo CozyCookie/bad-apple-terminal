@@ -21,7 +21,7 @@ A real-time terminal-based renderer for *Bad Apple!!* built in C++ using FFmpeg.
 
 ## 🖼️ Preview
 
-Add a GIF or video here (recommended)
+https://www.youtube.com/watch?v=qsblEsZ4Lps
 
 ---
 
