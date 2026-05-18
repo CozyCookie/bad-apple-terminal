@@ -1,3 +1,5 @@
+// Terminal Bad Apple project — CozyCookie
+
 #include <algorithm>
 #include <array>
 #include <chrono>
@@ -30,25 +32,19 @@ using namespace std::chrono;
 
 static constexpr double FALLBACK_FPS = 30.0;
 
-// Video is scaled to fit terminal width.
-// Height is chosen from width and terminal rows.
 static constexpr int MAX_RENDER_WIDTH = 160;
 static constexpr float HEIGHT_RATIO = 0.30f;
 
-// Cinematic grayscale ramp: dark -> bright
 static constexpr const char* GRADIENT = " .,:;i1tfLCG08@";
 static constexpr int GRADIENT_SIZE = 15;
 
-// Visual upgrades
 static constexpr bool ENABLE_MOTION_BLUR = true;
 static constexpr bool ENABLE_DEBUG_OVERLAY = true;
 
-// Motion blur weights: current + previous
 static constexpr int BLUR_CUR = 3;
 static constexpr int BLUR_PREV = 1;
 static constexpr int BLUR_DIV = BLUR_CUR + BLUR_PREV;
 
-// Gamma curve for more cinematic contrast
 static constexpr float CINEMATIC_GAMMA = 1.7f;
 
 // ===================== PLATFORM HELPERS =====================
